@@ -4,10 +4,10 @@
 #Check the operating system, and dependencies to execute the script. If curl & jq are not installed, the script will automatically install them.
 if [ -f /etc/redhat-release ]; then
     which curl &> /dev/null || yum install -y curl
-    which curl &> /dev/null || yum install -y jq
+    which jq &> /dev/null || yum install -y jq
 elif [ -f /etc/lsb-release ]; then
     which curl &> /dev/null || apt-get install -y curl
-    which curl &> /dev/null || apt-get install -y jq
+    which jq &> /dev/null || apt-get install -y jq
 fi
 
 #Check if curl and jq are installed, if not install them
