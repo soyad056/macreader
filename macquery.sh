@@ -1,5 +1,5 @@
 #!/bin/sh
-#This is a simple to retrive date from MAC address
+#This is a simple shell script to retrive data from MAC address
 
 #Check the operating system, and dependencies to execute the script. If curl & jq are not installed, the script will automatically install them.
 if [ -f /etc/redhat-release ]; then
