@@ -1,3 +1,8 @@
+#Author:
+Soyad Ahmmed, SDET Eng
+Version 1.0, CURL, SHELL, REST
+12/03/2022
+
 # Sccript Overview:
 
 This is simple shell script which can be run in any linux distribution to retrive company name and some other useful information from any MAC address. I have used Shell Programming language to write this script and it has some dependencies which is cURL & JQ.
