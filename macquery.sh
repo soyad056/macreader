@@ -3,11 +3,11 @@
 
 #Check the operating system, and dependencies to execute the script. If curl & jq are not installed, the script will automatically install them.
 if [ -f /etc/redhat-release ]; then
-    which curl &> /dev/null || sudo yum install -y curl
-    which jq &> /dev/null || sudo yum install -y jq
-elif [ -f /etc/lsb-release ]; then
-    which curl &> /dev/null || sudo apt-get install -y curl
-    which jq &> /dev/null || sudo apt-get install -y jq
+    which curl &> /dev/null || yum install -y curl
+    which jq &> /dev/null ||  yum install -y jq
+elif [ -f /etc/*-release* ]; then
+    which curl &> /dev/null ||  apt-get install -y curl
+    which jq &> /dev/null || apt-get install -y jq
 fi
 
 # You can get the API key from https://macaddress.io/ after Sign up and replace the API key in the below line
