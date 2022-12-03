@@ -10,7 +10,7 @@ elif [ -f /etc/lsb-release ]; then
     which jq &> /dev/null || apt-get install -y jq
 fi
 
-# If you can get the API key from https://macaddress.io/ after Sign up and replace the API key in the below line
+# You can get the API key from https://macaddress.io/ after Sign up and replace the API key in the below line
 API_KEY=at_K75y3UuN5GiCoYlamS0WUnUcRUa83 #Replace with your API key
 OUTPUT_TYPE=json #json or xml
 MAC_ADDRESS=$1 #MAC address to query in the parameter
